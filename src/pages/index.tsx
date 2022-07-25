@@ -10,6 +10,14 @@ export default function Home() {
     new Client("Pedro", 37, "4"),
   ];
 
+  function selectedClient(client: Client) {
+    console.log(client.name + "selected");
+  }
+
+  function deletedClient(client: Client) {
+    console.log(client.name + "deleted");
+  }
+
   return (
     <div
       className={`
@@ -19,7 +27,11 @@ export default function Home() {
     `}
     >
       <Layout title="Cadastro Simples">
-        <Table clients={clients}></Table>
+        <Table
+          clients={clients}
+          selectedClient={selectedClient}
+          deletedClient={deletedClient}
+        ></Table>
       </Layout>
     </div>
   );
