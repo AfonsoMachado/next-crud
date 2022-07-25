@@ -2,6 +2,7 @@ interface ButtonProps {
   children: any;
   className?: string;
   color?: "green" | "blue" | "gray";
+  onClick?: () => void;
 }
 
 export default function Button(props: ButtonProps) {
@@ -14,6 +15,7 @@ export default function Button(props: ButtonProps) {
       text-white px-4 py-2 rounded-md
       ${props.className}
     `}
+      onClick={props.onClick}
     >
       {props.children}
     </button>
