@@ -1,34 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<table align="center"><tr><td align="center" width="9999">
+<a href="http://nestjs.com/" target="blank"><img src="https://github.com/AfonsoMachado/next-crud/blob/main/public/nextjs-logotype-light.png" width="150" alt="Nest Logo" /></a>
 
-## Getting Started
+<h2>CRUD com Next.js</h2>
 
-First, run the development server:
+<p align="center">
+  <a href="#descrição-do-projeto">Descrição do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#computer-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#bookmark-variáveis-de-ambiente">Variáveis de Ambiente</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#fire-executando-o-projeto">Executando o Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+</td></tr>
+</table>
+
+## Descrição do Projeto
+
+Este projeto é a implementação de um CRUD de clientes. Foi completamente construído usando o framework [Next.js](https://nextjs.org/) e seus módulos para auxílio no desenvolvimento, além de um back-end simples usando [Firebase](https://firebase.google.com/).
+
+## :computer: Tecnologias
+
+Tecnologias utilizadas para o desenvolvimento:
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Firebase](https://firebase.google.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+
+## :bookmark: Variáveis de ambiente 
+
+As variáveis de ambiente utilizadas no projeto estão especificadas no arquivo *.env.example*, para usá-las é nescessário realizar uma cópia desse arquivo, preencher cada variável e renomear o mesmo para *.env.local*. Quaisquer alterações devem ser feitas nesse arquivo antes de executar o código:
+
+**Variáveis de ambiente presentes no .env do projeto**
 
 ```bash
-npm run dev
-# or
-yarn dev
+
+# CONFIGURAÇÕES DO FIREBASE
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH-DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## :fire: Executando o projeto
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Requisitos Necessários
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- [Node.js](https://nodejs.org/en/) (Foi utilizada a versão 16.16.0 durante o desenvolvimento)
+- [npm](https://www.npmjs.com/) ou [Yarn](https://classic.yarnpkg.com/)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+**Instalação e execução**
 
-## Learn More
+```bash
+# Instale todas as dependências necessárias:
+$ npm install
 
-To learn more about Next.js, take a look at the following resources:
+# Para iniciar em modo desenvolvimento:
+$ npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Iniciando em modo desenvolvimento
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+# Para iniciar em modo desenvolvimento:
+$ npm run dev
+```
 
-## Deploy on Vercel
+#### Iniciando em modo produção
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Para realizar o build da aplicação:
+$ npm run build
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Para iniciar em modo produção:
+$ npm start
+```
+
+#### Executando em http://localhost:3000/
+---
+
+<p align="center">Feito com 💜 por <strong><a href="https://www.linkedin.com/in/AfonsoMachado/">Afonso Machado</a> 🥰 </strong> </p>
