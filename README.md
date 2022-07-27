@@ -31,7 +31,6 @@ As variáveis de ambiente utilizadas no projeto estão especificadas no arquivo 
 **Variáveis de ambiente presentes no .env do projeto**
 
 ```bash
-
 # CONFIGURAÇÕES DO FIREBASE
 NEXT_PUBLIC_FIREBASE_API_KEY=
 NEXT_PUBLIC_FIREBASE_AUTH-DOMAIN=
